@@ -53,6 +53,21 @@ namespace Triangulos
                 ApresentaMensagemErro("Triângulo inválido.");
                 Environment.Exit(0);
             }
+            if (ladoA == (ladoB + ladoC))
+            {
+                ApresentaMensagemErro("Triângulo inválido.");
+                Environment.Exit(0);
+            }
+            if (ladoB == (ladoA + ladoC))
+            {
+                ApresentaMensagemErro("Triângulo inválido.");
+                Environment.Exit(0);
+            }
+            if (ladoC == (ladoA + ladoB))
+            {
+                ApresentaMensagemErro("Triângulo inválido.");
+                Environment.Exit(0);
+            }
 
         }
 
